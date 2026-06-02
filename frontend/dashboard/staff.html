@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Staff Dashboard — SEREN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+
+  <!-- ── Top Nav ─────────────────────────────────────────────────────────── -->
+  <header class="dash-header">
+    <span class="dash-logo">SEREN</span>
+
+    <div class="dash-header-right">
+      <!-- Profile dropdown -->
+      <div class="dash-profile-wrap" id="dashProfileWrap">
+        <button class="dash-profile-btn" id="dashProfileBtn" aria-label="My Account">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </button>
+        <div class="dash-profile-dropdown" id="dashProfileDropdown">
+          <div class="dash-profile-name" id="dashProfileName">Staff</div>
+          <div class="dash-profile-divider"></div>
+          <button class="dash-pd-item" id="changePasswordBtn">Change Password</button>
+          <button class="dash-pd-item" data-logout>Log Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Main ────────────────────────────────────────────────────────────── -->
+  <div class="dash-wrap">
+    <main>
+      <!-- hidden tab triggers — wired by dashboard.js -->
+      <nav id="dashTabNav" style="display:none">
+        <button data-tab="overview">Overview</button>
+        <button data-tab="addProduct">Add Product</button>
+        <button data-tab="editProducts">Edit Products</button>
+        <button data-tab="stock">Stock</button>
+        <button data-tab="orders">Orders</button>
+        <button data-tab="hotPicks">Hot Picks</button>
+        <button data-tab="offers">Offers</button>
+        <button data-tab="recordSale">Record Sale</button>
+        <button data-tab="delivery">Delivery</button>
+      </nav>
+
+      <!-- Section breadcrumb — shown when NOT on overview -->
+      <div class="dash-section-bar" id="dashSectionBar" style="display:none">
+        <button class="dash-back-btn" data-tab="overview">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Overview
+        </button>
+        <span class="dash-section-title" id="dashSectionTitle"></span>
+      </div>
+
+      <div class="dash-topbar">
+        <h1 id="dashPageTitle">Staff Dashboard</h1>
+      </div>
+
+      <section id="view"></section>
+    </main>
+  </div>
+
+  <!-- ── Change Password Modal ──────────────────────────────────────────────── -->
+  <div id="changePwOverlay" class="modal-overlay hidden">
+    <div class="modal">
+      <div class="modal-head">
+        <h3>Change Password</h3>
+        <button id="closePwModal" class="btn-xs danger-xs">✕</button>
+      </div>
+      <div class="modal-body" style="display:flex;flex-direction:column;gap:0.6rem">
+        <label class="field-label" style="margin:0">Current Password</label>
+        <input id="cpCurrent" type="password" class="field-input" placeholder="Current password" />
+        <label class="field-label" style="margin:0">New Password</label>
+        <input id="cpNew" type="password" class="field-input" placeholder="Min 8 characters" />
+        <label class="field-label" style="margin:0">Confirm New Password</label>
+        <input id="cpConfirm" type="password" class="field-input" placeholder="Repeat new password" />
+        <p id="cpErr" style="color:#ff3d3d;font-size:0.82rem;min-height:1rem;margin:0"></p>
+        <button id="cpSubmit" class="btn" style="margin-top:0.2rem">Update Password</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="../js/dashboard.js"></script>
+  <script type="module">
+    import { getUserName, apiRequest } from '../js/api.js';
+    import { showToast } from '../js/ui.js';
+
+    // Profile name
+    const name = getUserName();
+    const el = document.getElementById('dashProfileName');
+    if (el && name) el.textContent = name;
+
+    // Dropdown toggle
+    const btn  = document.getElementById('dashProfileBtn');
+    const drop = document.getElementById('dashProfileDropdown');
+    if (btn && drop) {
+      btn.addEventListener('click', e => { e.stopPropagation(); drop.classList.toggle('open'); });
+      document.addEventListener('click', e => { if (!drop.contains(e.target) && e.target !== btn) drop.classList.remove('open'); });
+    }
+
+    // Change Password modal
+    const overlay  = document.getElementById('changePwOverlay');
+    const closeBtn = document.getElementById('closePwModal');
+    const cpBtn    = document.getElementById('changePasswordBtn');
+    const submit   = document.getElementById('cpSubmit');
+    const errEl    = document.getElementById('cpErr');
+
+    const openModal = () => {
+      ['cpCurrent','cpNew','cpConfirm'].forEach(id => document.getElementById(id).value = '');
+      errEl.textContent = '';
+      overlay.classList.remove('hidden');
+      drop.classList.remove('open');
+    };
+    const closeModal = () => overlay.classList.add('hidden');
+
+    cpBtn?.addEventListener('click', openModal);
+    closeBtn?.addEventListener('click', closeModal);
+    overlay?.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+
+    submit?.addEventListener('click', async () => {
+      const current = document.getElementById('cpCurrent').value;
+      const newPw   = document.getElementById('cpNew').value;
+      const confirm = document.getElementById('cpConfirm').value;
+      errEl.textContent = '';
+
+      if (!current || !newPw || !confirm) { errEl.textContent = 'All fields are required.'; return; }
+      if (newPw.length < 8)              { errEl.textContent = 'New password must be at least 8 characters.'; return; }
+      if (newPw !== confirm)             { errEl.textContent = 'Passwords do not match.'; return; }
+
+      submit.disabled = true;
+      submit.textContent = 'Updating…';
+      try {
+        await apiRequest('/api/auth/me/', 'PATCH', { current_password: current, password: newPw }, true);
+        closeModal();
+        showToast('Password updated successfully!', 'success');
+      } catch (err) {
+        const payload = err?.payload || {};
+        errEl.textContent = payload.current_password || payload.password || payload.detail || err.message || 'Failed to update password.';
+      } finally {
+        submit.disabled = false;
+        submit.textContent = 'Update Password';
+      }
+    });
+  </script>
+</body>
+</html>

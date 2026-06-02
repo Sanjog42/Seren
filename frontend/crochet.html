@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crochets — Coming Soon | SEREN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <style>
+    .soon-wrap {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 1.5rem;
+    }
+    .soon-eyebrow {
+      font-size: 0.75rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #ff9ec4;
+      margin-bottom: 1rem;
+    }
+    .soon-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(4rem, 12vw, 8rem);
+      line-height: 0.9;
+      color: #fff;
+      letter-spacing: 0.03em;
+      margin-bottom: 1.2rem;
+    }
+    .soon-sub {
+      font-size: 1rem;
+      color: #888;
+      max-width: 380px;
+      line-height: 1.65;
+      margin-bottom: 2.2rem;
+    }
+    .soon-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1.2rem;
+      border: 1px solid rgba(255,158,196,0.3);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      color: #ff9ec4;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+    }
+    .soon-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #ff9ec4;
+      animation: pulse 1.6s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.4; transform: scale(0.7); }
+    }
+    .soon-back {
+      font-size: 0.85rem;
+      color: #555;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .soon-back:hover { color: #fff; }
+  </style>
+</head>
+<body>
+  <header class="nav nav-simple">
+    <a class="logo" href="./index.html">SEREN</a>
+    <div class="nav-cta">
+      <a class="login-link" href="./login.html">Login</a>
+      <a class="register-link" href="./register.html">Sign Up</a>
+      <div class="profile-wrap" id="profileWrap" style="display:none">
+        <button class="icon-btn profile-btn" id="profileBtn" aria-label="My Account">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <div class="profile-dropdown" id="profileDropdown">
+          <a href="./my-orders.html" class="pd-item">My Orders</a>
+          <a href="./account.html" class="pd-item">Edit Profile</a>
+          <button class="pd-item logout-btn nav-logout">Log Out</button>
+        </div>
+      </div>
+      <a class="cart-link icon-btn" href="./cart.html" aria-label="Cart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.16"/></svg>
+        <span class="cart-badge" id="cartCount" style="display:none">0</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="soon-wrap">
+    <p class="soon-eyebrow">SEREN Crochets</p>
+    <h1 class="soon-title">COMING<br>SOON</h1>
+    <p class="soon-sub">Our crochet collection is almost ready. Handmade pieces, custom bouquets, and more — launching very soon.</p>
+    <div class="soon-badge">
+      <span class="soon-dot"></span>
+      Launching Soon
+    </div>
+    <a class="soon-back" href="./index.html">← Back to Home</a>
+  </div>
+
+  <script type="module">
+    import { syncCartCount } from './js/cart.js?v=3';
+    import { renderFooter } from './js/footer.js';
+    syncCartCount();
+    renderFooter();
+  </script>
+</body>
+</html>
+
+<!-- ============================================================
+  TO RE-ENABLE the full crochet shop page, replace everything
+  above with the content below (remove this comment block):
+  ============================================================
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crochet - SEREN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+  <header class="nav nav-simple"><a class="logo" href="./index.html">SEREN</a><div class="nav-cta"><a class="login-link" href="./login.html">Login</a><a class="register-link" href="./register.html">Sign Up</a><div class="profile-wrap" id="profileWrap" style="display:none"><button class="icon-btn profile-btn" id="profileBtn" aria-label="My Account"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button><div class="profile-dropdown" id="profileDropdown"><a href="./my-orders.html" class="pd-item">My Orders</a><a href="./account.html" class="pd-item">Edit Profile</a><button class="pd-item logout-btn nav-logout">Log Out</button></div></div><a class="cart-link icon-btn" href="./cart.html" aria-label="Cart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.16"/></svg><span class="cart-badge" id="cartCount" style="display:none">0</span></a></div></header>
+  <main class="shop-layout">
+    <aside class="filters"><h4>Filters</h4><div id="labelFilters"></div></aside>
+    <section>
+      <a class="bouquet-banner" href="./custom-bouquet.html">
+        <div class="bouquet-banner-text">
+          <span class="bouquet-banner-label">NEW</span>
+          <h3>Build Your Custom Bouquet</h3>
+          <p>Pick your flowers, choose a wrapping, and we'll make it for you.</p>
+        </div>
+        <span class="bouquet-banner-arrow">→</span>
+      </a>
+      <div id="products" class="product-grid"></div>
+    </section>
+  </main>
+  <script type="module">
+    import { syncCartCount } from './js/cart.js?v=3';
+    import { renderCategoryPage } from './js/filters.js?v=3';
+    import { renderFooter } from './js/footer.js';
+    import { initNavSearch } from './js/navSearch.js';
+    syncCartCount();
+    initNavSearch();
+    renderCategoryPage({ category: 'crochet' });
+    renderFooter();
+  </script>
+</body>
+</html>
+
+============================================================ -->

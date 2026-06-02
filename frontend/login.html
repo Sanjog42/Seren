@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login — SEREN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: #080808;
+      font-family: var(--font-body, 'DM Sans', sans-serif);
+      color: #e4e4e4;
+    }
+
+    /* ── Left brand panel ── */
+    .auth-brand {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 3rem;
+      background: linear-gradient(160deg, #1a0505 0%, #5a0000 50%, #3d0a0a 100%);
+    }
+    .auth-brand::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 30% 20%, rgba(200,30,30,0.25) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 80%, rgba(0,0,0,0.6) 0%, transparent 60%);
+    }
+    .auth-brand-logo {
+      position: absolute;
+      top: 3rem;
+      left: 3rem;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.2rem;
+      letter-spacing: 0.06em;
+      color: #fff;
+      text-decoration: none;
+      z-index: 1;
+    }
+    .auth-brand-content {
+      position: relative;
+      z-index: 1;
+    }
+    .auth-brand-content h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      line-height: 0.95;
+      color: #fff;
+      letter-spacing: 0.02em;
+      margin-bottom: 1rem;
+    }
+    .auth-brand-content p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.55);
+      max-width: 320px;
+      line-height: 1.6;
+    }
+    .auth-brand-tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.4rem;
+    }
+    .auth-brand-tag {
+      padding: 0.3rem 0.9rem;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* ── Right form panel ── */
+    .auth-form-panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 2rem;
+      background: #0a0a0a;
+      border-left: 1px solid #1a1a1a;
+    }
+    .auth-form-wrap {
+      width: 100%;
+      max-width: 380px;
+    }
+    .auth-form-wrap h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.6rem;
+      letter-spacing: 0.04em;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+    .auth-form-wrap .auth-subtitle {
+      font-size: 0.88rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+    .auth-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    .auth-field label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #888;
+    }
+    .auth-field input {
+      background: #111;
+      border: 1px solid #242424;
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      color: #fff;
+      font-size: 0.92rem;
+      font-family: inherit;
+      width: 100%;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .auth-field input:focus {
+      border-color: #00e5ff;
+      box-shadow: 0 0 0 3px rgba(0,229,255,0.1);
+    }
+    .auth-submit {
+      width: 100%;
+      padding: 0.85rem;
+      background: #fff;
+      color: #080808;
+      border: none;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      font-family: inherit;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      transition: background 0.18s, transform 0.12s;
+    }
+    .auth-submit:hover { background: #e0e0e0; }
+    .auth-submit:active { transform: scale(0.99); }
+    .auth-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+    .auth-error {
+      font-size: 0.84rem;
+      color: #ff5555;
+      min-height: 1.2em;
+      margin-top: 0.6rem;
+    }
+    .auth-switch {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 1.6rem;
+      text-align: center;
+    }
+    .auth-switch a {
+      color: #00e5ff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .auth-switch a:hover { text-decoration: underline; }
+    .auth-divider {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin: 1.4rem 0;
+      color: #2a2a2a;
+      font-size: 0.78rem;
+    }
+    .auth-divider::before, .auth-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #1e1e1e;
+    }
+
+    @media (max-width: 700px) {
+      body { grid-template-columns: 1fr; }
+      .auth-brand { display: none; }
+      .auth-form-panel {
+        padding: 2.5rem 1.4rem;
+        border-left: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Left brand panel -->
+  <div class="auth-brand">
+    <a class="auth-brand-logo" href="./index.html">SEREN</a>
+    <div class="auth-brand-content">
+      <h2>WELCOME<br>BACK.</h2>
+      <p>Log in to your account to browse kits, clothing, and crochets — and track your orders.</p>
+      <div class="auth-brand-tags">
+        <span class="auth-brand-tag">Kits</span>
+        <span class="auth-brand-tag">Clothing</span>
+        <span class="auth-brand-tag">Crochets</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right form panel -->
+  <div class="auth-form-panel">
+    <div class="auth-form-wrap">
+      <h1>Login</h1>
+      <p class="auth-subtitle">Enter your credentials to continue</p>
+
+      <form id="loginForm" novalidate>
+        <div class="auth-field">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" placeholder="you@example.com" required autocomplete="email" />
+        </div>
+        <div class="auth-field">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Your password" required autocomplete="current-password" />
+        </div>
+        <button class="auth-submit" type="submit">Login</button>
+        <p id="loginError" class="auth-error"></p>
+        <p style="text-align:right;margin:0.4rem 0 0">
+          <a href="./forgot-password.html" style="font-size:0.83rem;color:#888;text-decoration:none;transition:color 0.2s"
+            onmouseover="this.style.color='#00e5ff'" onmouseout="this.style.color='#888'">Forgot password?</a>
+        </p>
+      </form>
+
+      <p class="auth-switch">Don't have an account? <a href="./register.html">Sign Up</a></p>
+    </div>
+  </div>
+
+  <script type="module" src="./js/auth.js"></script>
+</body>
+</html>

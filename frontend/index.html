@@ -1,0 +1,160 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SEREN — Football Jerseys & Kits in Nepal</title>
+  <meta name="description" content="Shop authentic football jerseys, kits, and sportswear in Nepal. Home kit, away kit, club kits and more. Fast delivery across Nepal." />
+  <meta name="keywords" content="football jersey nepal, football kit nepal, buy jersey nepal, seren nepal, sports jersey kathmandu" />
+  <meta property="og:title" content="SEREN — Football Jerseys & Kits in Nepal" />
+  <meta property="og:description" content="Shop authentic football jerseys, kits, and sportswear in Nepal." />
+  <meta property="og:url" content="https://serennp.com/" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <header class="nav nav-home">
+    <a class="logo" href="./index.html">SEREN</a>
+    <div class="nav-search-wrap">
+      <svg class="nav-si" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input class="nav-search-input" type="search" placeholder="Search products, collections…" autocomplete="off" />
+    </div>
+    <div class="nav-cta">
+      <a class="login-link" href="./login.html">Login</a><a class="register-link" href="./register.html">Sign Up</a>
+      <div class="profile-wrap" id="profileWrap" style="display:none">
+        <button class="icon-btn profile-btn" id="profileBtn" aria-label="My Account">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <div class="profile-dropdown" id="profileDropdown">
+          <a href="./my-orders.html" class="pd-item">My Orders</a>
+          <a href="./account.html" class="pd-item">Edit Profile</a>
+          <button class="pd-item logout-btn nav-logout">Log Out</button>
+        </div>
+      </div>
+      <a class="cart-link icon-btn" href="./cart.html" aria-label="Cart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.16"/></svg>
+        <span class="cart-badge" id="cartCount" style="display:none">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ── Hero: three-panel category split ── -->
+  <section class="hero-split">
+    <a class="hsplit-panel hsplit-kits" href="./kits.html">
+      <div class="hsplit-content">
+        <span class="hsplit-eyebrow">SHOP</span>
+        <h2 class="hsplit-title">KITS</h2>
+        <span class="hsplit-cta">Explore →</span>
+      </div>
+    </a>
+    <a class="hsplit-panel hsplit-clothing" href="./clothing.html">
+      <div class="hsplit-content">
+        <span class="hsplit-eyebrow">SHOP</span>
+        <h2 class="hsplit-title">CLOTHING</h2>
+        <span class="hsplit-cta">Explore →</span>
+      </div>
+    </a>
+    <div class="hsplit-panel hsplit-crochets hsplit-soon">
+      <div class="hsplit-content">
+        <span class="hsplit-eyebrow">COMING SOON</span>
+        <h2 class="hsplit-title">CROCHETS</h2>
+        <span class="hsplit-cta hsplit-cta-soon">Launching Soon</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Hot Picks ── -->
+  <section class="section">
+    <div class="buy-look-head"><h2>HOT PICKS</h2></div>
+    <div id="featured" class="look-track"></div>
+  </section>
+
+  <!-- ── Offers (hidden until populated) ── -->
+  <section class="section" id="offersSection" style="display:none">
+    <div class="buy-look-head">
+      <h2>OFFERS</h2>
+      <span class="offers-tag">🏷 Limited Deals</span>
+    </div>
+    <div id="offersTrack" class="look-track"></div>
+  </section>
+
+  <!-- ── New Arrivals ── -->
+  <section class="section">
+    <div class="buy-look-head"><h2>NEW ARRIVALS</h2></div>
+    <div id="newArrivals" class="look-track"></div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer id="about" class="footer"></footer>
+
+  <script type="module">
+    import { apiRequest } from './js/api.js';
+    import { syncCartCount } from './js/cart.js?v=3';
+    import { renderFooter } from './js/footer.js';
+    import { initNavSearch } from './js/navSearch.js';
+
+    syncCartCount();
+    renderFooter();
+    initNavSearch();
+
+    const DETAIL_PAGE = { kits: './product-kits.html', crochet: './product-crochet.html', clothing: './product-clothing.html' };
+
+    function renderCards(container, items, emptyMsg) {
+      if (!items.length) {
+        container.innerHTML = `<p style="color:#555;padding:1rem">${emptyMsg}</p>`;
+        return;
+      }
+      container.innerHTML = items.map(item => `
+        <article class="look-card home-look-card">
+          <a href="${DETAIL_PAGE[item.category] || './kits.html'}?id=${item.id}">
+            <img src="${item.primary_image || ''}" alt="${item.name}" />
+          </a>
+          <div class="look-body">
+            <h3>${item.name}</h3>
+            <p class="look-price-row">
+              ${item.is_offer && item.original_price
+                ? `<span class="offer-price-wrap"><strong>NPR ${Number(item.price).toLocaleString()}</strong><span class="price-original">NPR ${Number(item.original_price).toLocaleString()}</span></span>`
+                : `<strong>NPR ${Number(item.price).toLocaleString()}</strong>`}
+            </p>
+            <p class="muted" style="font-size:0.82rem;text-transform:capitalize">${item.category}</p>
+            <a class="mini-btn" href="${DETAIL_PAGE[item.category] || './kits.html'}?id=${item.id}">VIEW PRODUCT</a>
+          </div>
+        </article>`).join('');
+    }
+
+    const featured      = document.getElementById('featured');
+    const offersSection = document.getElementById('offersSection');
+    const offersTrack   = document.getElementById('offersTrack');
+    const newArrivals   = document.getElementById('newArrivals');
+
+    // Hot Picks + Offers + New Arrivals in parallel
+    const [hotPicksResult, offersResult, latestResult] = await Promise.allSettled([
+      apiRequest('/api/products/hot-picks/'),
+      apiRequest('/api/products/offers/'),
+      apiRequest('/api/products/?limit=5'),
+    ]);
+
+    if (hotPicksResult.status === 'fulfilled') {
+      renderCards(featured, hotPicksResult.value, 'No hot picks selected yet.');
+    } else {
+      featured.innerHTML = '<p style="color:#555;padding:1rem">Could not load hot picks.</p>';
+    }
+
+    if (offersResult.status === 'fulfilled' && offersResult.value.length > 0) {
+      offersSection.style.display = '';
+      renderCards(offersTrack, offersResult.value, '');
+    }
+
+    if (latestResult.status === 'fulfilled') {
+      renderCards(newArrivals, latestResult.value, 'No products yet.');
+    } else {
+      newArrivals.innerHTML = '<p style="color:#555;padding:1rem">Could not load new arrivals.</p>';
+    }
+  </script>
+</body>
+</html>

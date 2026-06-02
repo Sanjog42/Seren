@@ -1,0 +1,27 @@
+Options -Indexes
+
+# ─── Block access to sensitive files ─────────────────────────────────────────
+<Files ".env">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+<Files "passenger_wsgi.py">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+<FilesMatch "\.(example|log|sh|cfg|ini)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# ─── Serve /staticfiles/ and /media/ directly without going through Passenger ─
+# LiteSpeed reads these rules and bypasses the WSGI app for static content.
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]

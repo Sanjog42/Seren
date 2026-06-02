@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to <a id="targetLink" href="./product-kits.html">Product page</a>...</p>
+  <script>
+    const id = new URLSearchParams(location.search).get('id');
+    const target = id ? `./product-kits.html?id=${encodeURIComponent(id)}` : './product-kits.html';
+    document.getElementById('targetLink').href = target;
+    location.replace(target);
+  </script>
+</body>
+</html>

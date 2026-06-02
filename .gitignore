@@ -1,0 +1,36 @@
+# Environment variables - NEVER commit these
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+venv/
+env/
+.venv/
+
+# Django
+staticfiles/
+media/
+db.sqlite3
+*.sqlite3
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+logs/

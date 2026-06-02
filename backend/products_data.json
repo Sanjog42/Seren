@@ -1,0 +1,2250 @@
+[
+{
+  "model": "products.label",
+  "pk": 3,
+  "fields": {
+    "name": "Fan edition",
+    "category": "kits",
+    "is_predefined": false
+  }
+},
+{
+  "model": "products.label",
+  "pk": 14,
+  "fields": {
+    "name": "Embroidery Set",
+    "category": "kits",
+    "is_predefined": true
+  }
+},
+{
+  "model": "products.label",
+  "pk": 15,
+  "fields": {
+    "name": "Home Kit",
+    "category": "kits",
+    "is_predefined": true
+  }
+},
+{
+  "model": "products.label",
+  "pk": 16,
+  "fields": {
+    "name": "Away Kit",
+    "category": "kits",
+    "is_predefined": true
+  }
+},
+{
+  "model": "products.label",
+  "pk": 17,
+  "fields": {
+    "name": "Third Kit",
+    "category": "kits",
+    "is_predefined": true
+  }
+},
+{
+  "model": "products.label",
+  "pk": 18,
+  "fields": {
+    "name": "Half Sleeve",
+    "category": "kits",
+    "is_predefined": true
+  }
+},
+{
+  "model": "products.label",
+  "pk": 19,
+  "fields": {
+    "name": "Players Grade",
+    "category": "kits",
+    "is_predefined": true
+  }
+},
+{
+  "model": "products.label",
+  "pk": 20,
+  "fields": {
+    "name": "Special Edition",
+    "category": "kits",
+    "is_predefined": true
+  }
+},
+{
+  "model": "products.label",
+  "pk": 21,
+  "fields": {
+    "name": "Club Kit",
+    "category": "kits",
+    "is_predefined": true
+  }
+},
+{
+  "model": "products.label",
+  "pk": 22,
+  "fields": {
+    "name": "Retro",
+    "category": "kits",
+    "is_predefined": true
+  }
+},
+{
+  "model": "products.label",
+  "pk": 23,
+  "fields": {
+    "name": "Full Sleeve",
+    "category": "kits",
+    "is_predefined": true
+  }
+},
+{
+  "model": "products.label",
+  "pk": 24,
+  "fields": {
+    "name": "Sublimation Print",
+    "category": "kits",
+    "is_predefined": true
+  }
+},
+{
+  "model": "products.label",
+  "pk": 25,
+  "fields": {
+    "name": "World Cup",
+    "category": "kits",
+    "is_predefined": true
+  }
+},
+{
+  "model": "products.label",
+  "pk": 26,
+  "fields": {
+    "name": "T-Shirt",
+    "category": "clothing",
+    "is_predefined": false
+  }
+},
+{
+  "model": "products.label",
+  "pk": 27,
+  "fields": {
+    "name": "Hoodie",
+    "category": "clothing",
+    "is_predefined": false
+  }
+},
+{
+  "model": "products.product",
+  "pk": 18,
+  "fields": {
+    "name": "Portugal Home Kit",
+    "slug": "portugal-home-kit",
+    "description": "Portugal national team home kit in the iconic deep red and green. A Grade quality replica with embroidered FPF crest, lightweight breathable fabric, and a slim performance cut. Half sleeve. Includes matching embroidered shorts.",
+    "category": "kits",
+    "price": "1350.00",
+    "is_active": true,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:07.578Z",
+    "updated_at": "2026-05-23T18:27:01.685Z",
+    "stock_last_changed": "2026-05-23T18:27:01.729Z",
+    "allow_print": true,
+    "labels": [
+      14,
+      18,
+      15
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 19,
+  "fields": {
+    "name": "Portugal Away Kit",
+    "slug": "portugal-away-kit",
+    "description": "Portugal away kit in clean white with bold red and green trim detailing. A Grade quality replica with moisture-wicking fabric and embroidered FPF crest. Half sleeve. Includes matching embroidered shorts.",
+    "category": "kits",
+    "price": "1350.00",
+    "is_active": true,
+    "is_hot_pick": true,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:07.653Z",
+    "updated_at": "2026-05-23T18:31:31.901Z",
+    "stock_last_changed": "2026-05-23T18:31:31.949Z",
+    "allow_print": true,
+    "labels": [
+      16,
+      14,
+      18
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 20,
+  "fields": {
+    "name": "Portugal Third Kit",
+    "slug": "portugal-third-kit",
+    "description": "Portugal's distinctive third kit in an alternative colorway. A Grade quality build with premium finish, official-style FPF crest detailing, and breathable fabric. Half sleeve. Includes matching embroidered shorts.",
+    "category": "kits",
+    "price": "1350.00",
+    "is_active": true,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:07.708Z",
+    "updated_at": "2026-05-23T18:26:38.760Z",
+    "stock_last_changed": "2026-05-23T18:26:38.808Z",
+    "allow_print": true,
+    "labels": [
+      14,
+      18,
+      17
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 21,
+  "fields": {
+    "name": "Brazil Away Kit",
+    "slug": "brazil-away-kit",
+    "description": "Brazil national team away kit in deep navy blue. A Grade quality replica of the iconic Canarinho away strip with CBF crest detailing and crisp breathable construction. Half sleeve. Includes matching embroidered shorts.",
+    "category": "kits",
+    "price": "1350.00",
+    "is_active": true,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:07.782Z",
+    "updated_at": "2026-05-23T18:29:23.440Z",
+    "stock_last_changed": "2026-05-23T18:29:23.487Z",
+    "allow_print": true,
+    "labels": [
+      16,
+      14,
+      18
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 22,
+  "fields": {
+    "name": "Brazil Home Kit",
+    "slug": "brazil-home-kit",
+    "description": "The legendary yellow and green of the world's most recognised football jersey. A Grade quality Brazil home kit replica with vibrant colors, breathable fabric, and embroidered CBF crest. Half sleeve. Includes matching embroidered shorts.",
+    "category": "kits",
+    "price": "1350.00",
+    "is_active": true,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:07.865Z",
+    "updated_at": "2026-05-23T18:29:08.883Z",
+    "stock_last_changed": "2026-05-23T18:29:08.928Z",
+    "allow_print": true,
+    "labels": [
+      14,
+      18,
+      15
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 23,
+  "fields": {
+    "name": "Argentina Away Kit",
+    "slug": "argentina-away-kit",
+    "description": "Argentina national team away kit in dark navy blue. A Grade quality replica worn by the world champions, featuring lightweight mesh construction and embroidered AFA crest. Half sleeve. Includes matching embroidered shorts.",
+    "category": "kits",
+    "price": "1350.00",
+    "is_active": true,
+    "is_hot_pick": true,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:07.937Z",
+    "updated_at": "2026-05-23T16:12:07.512Z",
+    "stock_last_changed": "2026-05-23T16:12:07.552Z",
+    "allow_print": true,
+    "labels": [
+      16,
+      14,
+      18
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 24,
+  "fields": {
+    "name": "Argentina Home Kit",
+    "slug": "argentina-home-kit",
+    "description": "The iconic sky blue and white stripes of the reigning world champions. A Grade quality Argentina home kit with lightweight performance fabric and embroidered AFA crest. Half sleeve. Includes matching embroidered shorts.",
+    "category": "kits",
+    "price": "1350.00",
+    "is_active": true,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:08.016Z",
+    "updated_at": "2026-05-23T18:28:06.594Z",
+    "stock_last_changed": "2026-05-23T18:28:06.643Z",
+    "allow_print": true,
+    "labels": [
+      14,
+      18,
+      15
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 25,
+  "fields": {
+    "name": "Germany Home Kit",
+    "slug": "germany-home-kit",
+    "description": "Germany national team home kit in classic white. A Grade quality replica of Die Mannschaft with DFB crest detailing, premium breathable fabric, and a sharp modern cut. Half sleeve. Includes matching embroidered shorts.",
+    "category": "kits",
+    "price": "1350.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:08.099Z",
+    "updated_at": "2026-05-23T16:15:22.713Z",
+    "stock_last_changed": "2026-05-23T16:15:22.758Z",
+    "allow_print": true,
+    "labels": [
+      14,
+      18,
+      15
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 26,
+  "fields": {
+    "name": "Germany Away Kit",
+    "slug": "germany-away-kit",
+    "description": "Germany away kit in bold black with clean DFB badge detailing. A Grade quality replica with a slim performance fit and moisture-wicking breathable fabric. Half sleeve. Includes matching embroidered shorts.",
+    "category": "kits",
+    "price": "1350.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:08.174Z",
+    "updated_at": "2026-05-23T16:15:17.587Z",
+    "stock_last_changed": "2026-05-23T16:15:17.634Z",
+    "allow_print": true,
+    "labels": [
+      16,
+      14,
+      18
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 27,
+  "fields": {
+    "name": "Japan Away Kit",
+    "slug": "japan-away-kit",
+    "description": "Japan national team away kit from the Samurai Blue. A Grade quality replica with a bold striking colorway, JFA crest detailing, and lightweight breathable construction. Half sleeve. Includes matching embroidered shorts.",
+    "category": "kits",
+    "price": "1350.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:08.231Z",
+    "updated_at": "2026-05-23T16:15:11.268Z",
+    "stock_last_changed": "2026-05-23T16:15:11.311Z",
+    "allow_print": true,
+    "labels": [
+      16,
+      14,
+      18
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 28,
+  "fields": {
+    "name": "Spain Away Kit",
+    "slug": "spain-away-kit",
+    "description": "Spain national team away kit with sleek RFEF crest detailing. A Grade quality replica with modern cut, moisture-wicking performance fabric, and clean finishing. Half sleeve. Includes matching embroidered shorts.",
+    "category": "kits",
+    "price": "1350.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:08.298Z",
+    "updated_at": "2026-05-23T16:15:03.058Z",
+    "stock_last_changed": "2026-05-23T16:15:03.103Z",
+    "allow_print": true,
+    "labels": [
+      16,
+      14,
+      18
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 29,
+  "fields": {
+    "name": "Spain Home Kit",
+    "slug": "spain-home-kit",
+    "description": "Spain national team home kit in the iconic bold red of La Roja. A Grade quality replica with RFEF crest, breathable fabric, and the sharp look of one of football's greatest nations. Half sleeve. Includes matching embroidered shorts.",
+    "category": "kits",
+    "price": "1350.00",
+    "is_active": true,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:08.382Z",
+    "updated_at": "2026-05-23T18:27:30.441Z",
+    "stock_last_changed": "2026-05-23T18:27:30.625Z",
+    "allow_print": true,
+    "labels": [
+      14,
+      18,
+      15
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 30,
+  "fields": {
+    "name": "Argentina Away Kit (Players Grade)",
+    "slug": "argentina-away-kit-players-grade",
+    "description": "Argentina's away kit in the Players Grade — the same spec worn by the world champions on the pitch. Ultra-lightweight Dri-FIT ADV fabric, laser-cut ventilation, and a precision athletic fit with embroidered AFA crest. Half sleeve.",
+    "category": "kits",
+    "price": "3500.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:54.043Z",
+    "updated_at": "2026-05-23T16:14:48.623Z",
+    "stock_last_changed": "2026-05-23T16:14:48.658Z",
+    "allow_print": true,
+    "labels": [
+      16,
+      18,
+      19
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 31,
+  "fields": {
+    "name": "Brazil Away Kit (Players Grade)",
+    "slug": "brazil-away-kit-players-grade",
+    "description": "Brazil's away kit in the Players Grade — built to the exact standard worn by the Canarinho on match day. Advanced moisture-wicking fabric, bonded seams, and an athletic slim fit with CBF crest. Half sleeve.",
+    "category": "kits",
+    "price": "3500.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:54.090Z",
+    "updated_at": "2026-05-23T16:14:41.061Z",
+    "stock_last_changed": "2026-05-23T16:14:41.105Z",
+    "allow_print": true,
+    "labels": [
+      16,
+      18,
+      19
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 32,
+  "fields": {
+    "name": "Portugal Special Edition Kit (Players Grade)",
+    "slug": "portugal-special-edition-kit-players-grade",
+    "description": "Portugal's limited special edition kit in the Players Grade. A rare collector's piece featuring unique colorway and detailing not found in the standard range. Player-spec build with premium breathable fabric and embroidered FPF crest. Half sleeve.",
+    "category": "kits",
+    "price": "3800.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:54.148Z",
+    "updated_at": "2026-05-23T16:14:34.559Z",
+    "stock_last_changed": "2026-05-23T16:14:34.604Z",
+    "allow_print": true,
+    "labels": [
+      18,
+      19,
+      20
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 33,
+  "fields": {
+    "name": "Portugal Away Kit (Players Grade)",
+    "slug": "portugal-away-kit-players-grade",
+    "description": "Portugal's away kit in the Players Grade — identical in quality and construction to what the squad wears. Advanced performance fabric with FPF crest and a clean white finish with red and green trim. Half sleeve.",
+    "category": "kits",
+    "price": "3500.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:56:54.207Z",
+    "updated_at": "2026-05-23T18:31:57.556Z",
+    "stock_last_changed": "2026-05-23T18:31:57.587Z",
+    "allow_print": true,
+    "labels": [
+      16,
+      18,
+      19
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 34,
+  "fields": {
+    "name": "Barcelona 08/09 Retro Kit",
+    "slug": "barcelona-0809-retro-kit",
+    "description": "Barcelona's iconic 2008/09 treble-winning home kit. One of the greatest kits from one of football's greatest ever seasons. Dark navy and burgundy stripes with embroidered Unicef crest detail. Half sleeve.",
+    "category": "kits",
+    "price": "3200.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:10.585Z",
+    "updated_at": "2026-05-23T16:07:31.770Z",
+    "stock_last_changed": "2026-05-23T16:07:31.800Z",
+    "allow_print": true,
+    "labels": [
+      21,
+      18,
+      22
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 35,
+  "fields": {
+    "name": "Barcelona 14/15 Retro Kit",
+    "slug": "barcelona-1415-retro-kit",
+    "description": "Barcelona's 2014/15 treble-winning kit — the season of the MSN front three. Classic blue and red stripes with a clean modern silhouette. A must-have retro piece for any Barca fan. Half sleeve.",
+    "category": "kits",
+    "price": "3200.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:10.638Z",
+    "updated_at": "2026-05-23T16:07:21.096Z",
+    "stock_last_changed": "2026-05-23T16:07:21.139Z",
+    "allow_print": true,
+    "labels": [
+      21,
+      18,
+      22
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 36,
+  "fields": {
+    "name": "Barcelona x Cactus Jack Home Kit",
+    "slug": "barcelona-x-cactus-jack-home-kit",
+    "description": "The rare Barcelona x Travis Scott Cactus Jack collaboration home kit. A streetwear-meets-football collector's piece featuring the iconic Cactus Jack branding fused with Barcelona's home colorway. Limited and hard to find. Half sleeve.",
+    "category": "kits",
+    "price": "3500.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:10.695Z",
+    "updated_at": "2026-05-23T16:07:13.612Z",
+    "stock_last_changed": "2026-05-23T16:07:13.632Z",
+    "allow_print": true,
+    "labels": [
+      21,
+      18,
+      15,
+      20
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 37,
+  "fields": {
+    "name": "Barcelona x Cactus Jack Away Kit",
+    "slug": "barcelona-x-cactus-jack-away-kit",
+    "description": "The rare Barcelona x Travis Scott Cactus Jack collaboration away kit. Bold alternative colorway with Cactus Jack detailing — a unique crossover between football culture and street fashion. Half sleeve.",
+    "category": "kits",
+    "price": "3500.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:10.729Z",
+    "updated_at": "2026-05-23T16:07:03.745Z",
+    "stock_last_changed": "2026-05-23T16:07:03.794Z",
+    "allow_print": true,
+    "labels": [
+      16,
+      21,
+      18,
+      20
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 38,
+  "fields": {
+    "name": "Barcelona Pink Special Edition",
+    "slug": "barcelona-pink-special-edition",
+    "description": "Barcelona's striking pink special edition kit — a bold departure from tradition. Clean rose-pink colorway with subtle Barca branding and a sleek modern cut. A standout piece for collectors and fans alike. Half sleeve.",
+    "category": "kits",
+    "price": "3500.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:10.794Z",
+    "updated_at": "2026-05-23T16:06:38.789Z",
+    "stock_last_changed": "2026-05-23T16:06:38.807Z",
+    "allow_print": true,
+    "labels": [
+      21,
+      18,
+      20
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 39,
+  "fields": {
+    "name": "Arsenal 03/04 Retro Kit",
+    "slug": "arsenal-0304-retro-kit",
+    "description": "Arsenal's legendary 2003/04 Invincibles season kit — worn by the only team in Premier League history to go an entire season unbeaten. Iconic red and white with the classic O2 sponsor. A piece of football history. Half sleeve.",
+    "category": "kits",
+    "price": "3200.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:10.823Z",
+    "updated_at": "2026-05-23T16:06:13.459Z",
+    "stock_last_changed": "2026-05-23T16:06:13.478Z",
+    "allow_print": true,
+    "labels": [
+      21,
+      18,
+      22
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 40,
+  "fields": {
+    "name": "AC Milan 07/08 Retro Kit",
+    "slug": "ac-milan-0708-retro-kit",
+    "description": "AC Milan's classic 2007/08 home kit in the timeless red and black stripes. Worn during one of the Rossoneri's most celebrated eras at the San Siro. A premium retro piece for Serie A fans. Half sleeve.",
+    "category": "kits",
+    "price": "2200.00",
+    "is_active": true,
+    "is_hot_pick": true,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:10.853Z",
+    "updated_at": "2026-05-23T16:13:52.517Z",
+    "stock_last_changed": "2026-05-23T16:13:52.536Z",
+    "allow_print": true,
+    "labels": [
+      21,
+      18,
+      22
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 41,
+  "fields": {
+    "name": "Manchester United 07/08 Retro Kit",
+    "slug": "manchester-united-0708-retro-kit",
+    "description": "Manchester United's 2007/08 Champions League winning kit — the season of Ronaldo, Rooney, and Tevez. Classic red with AIG sponsor and a tailored full sleeve cut. One of the most iconic kits in Premier League history. Full sleeve.",
+    "category": "kits",
+    "price": "3200.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:10.881Z",
+    "updated_at": "2026-05-23T16:02:22.328Z",
+    "stock_last_changed": "2026-05-23T16:02:22.348Z",
+    "allow_print": true,
+    "labels": [
+      21,
+      23,
+      22
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 42,
+  "fields": {
+    "name": "Real Madrid Home Kit",
+    "slug": "real-madrid-home-kit",
+    "description": "Real Madrid's home kit in the legendary all-white of Los Blancos. Clean and iconic, representing the most decorated club in football history. Premium build with embroidered club crest and breathable performance fabric. Half sleeve.",
+    "category": "kits",
+    "price": "2800.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:10.912Z",
+    "updated_at": "2026-05-23T16:00:03.575Z",
+    "stock_last_changed": "2026-05-23T16:00:03.607Z",
+    "allow_print": true,
+    "labels": [
+      21,
+      18,
+      15
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 43,
+  "fields": {
+    "name": "Real Madrid Dragon Special Edition 23/24",
+    "slug": "real-madrid-dragon-special-edition-2324",
+    "description": "Real Madrid's stunning 2023/24 dragon special edition kit. An extraordinary design featuring intricate dragon-inspired detailing — one of the most visually striking special edition kits released in recent years. Limited availability. Half sleeve.",
+    "category": "kits",
+    "price": "3500.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:10.967Z",
+    "updated_at": "2026-05-23T16:00:44.585Z",
+    "stock_last_changed": "2026-05-23T16:00:44.614Z",
+    "allow_print": true,
+    "labels": [
+      21,
+      18,
+      20
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 44,
+  "fields": {
+    "name": "Real Madrid Dragon Special Edition 22/23",
+    "slug": "real-madrid-dragon-special-edition-2223",
+    "description": "Real Madrid's 2022/23 dragon special edition kit. Bold dragon-themed artwork on premium fabric — a collector's piece that blends football heritage with artistic design. Half sleeve.",
+    "category": "kits",
+    "price": "3500.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:11.019Z",
+    "updated_at": "2026-05-23T16:00:38.113Z",
+    "stock_last_changed": "2026-05-23T16:00:38.162Z",
+    "allow_print": true,
+    "labels": [
+      21,
+      18,
+      20
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 45,
+  "fields": {
+    "name": "Chelsea 15/16 Retro Kit",
+    "slug": "chelsea-1516-retro-kit",
+    "description": "Chelsea's 2015/16 home kit from the Premier League title-winning era. The classic royal blue of Stamford Bridge with the iconic lion crest. A timeless retro piece from the Blues' golden period. Half sleeve.",
+    "category": "kits",
+    "price": "3200.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:11.089Z",
+    "updated_at": "2026-05-23T15:59:25.979Z",
+    "stock_last_changed": "2026-05-23T15:59:26.025Z",
+    "allow_print": true,
+    "labels": [
+      21,
+      18,
+      22
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 46,
+  "fields": {
+    "name": "Inter Milan 98/99 Retro Kit",
+    "slug": "inter-milan-9899-retro-kit",
+    "description": "Inter Milan's iconic 1998/99 retro kit in the classic black and blue nerazzurri stripes. Worn during the Ronaldo era at San Siro,a legendary piece of Italian football history. Half sleeve.",
+    "category": "kits",
+    "price": "2200.00",
+    "is_active": true,
+    "is_hot_pick": true,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:11.156Z",
+    "updated_at": "2026-05-23T15:59:01.060Z",
+    "stock_last_changed": "2026-05-23T15:59:01.091Z",
+    "allow_print": true,
+    "labels": [
+      21,
+      18,
+      22
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 47,
+  "fields": {
+    "name": "Spain Home Kit (Sublimation)",
+    "slug": "spain-home-kit-sublimation",
+    "description": "Spain's iconic red home kit in sublimation print quality. World Cup edition featuring full sublimated design with RFEF crest detailing. Vibrant colors embedded directly into the fabric for a long-lasting finish. Half sleeve. With Lamine Yamal print on the back.",
+    "category": "kits",
+    "price": "750.00",
+    "is_active": true,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:45.614Z",
+    "updated_at": "2026-05-23T18:25:47.143Z",
+    "stock_last_changed": "2026-05-23T18:25:47.189Z",
+    "allow_print": false,
+    "labels": [
+      18,
+      15,
+      24,
+      25
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 48,
+  "fields": {
+    "name": "Portugal Home Kit (Sublimation)",
+    "slug": "portugal-home-kit-sublimation",
+    "description": "Portugal's deep red and green home kit in sublimation print quality. World Cup edition with sublimated FPF crest and bold national colorway. Breathable fabric with vivid color retention. Half sleeve. With Ronaldo print on the back.",
+    "category": "kits",
+    "price": "750.00",
+    "is_active": true,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:45.687Z",
+    "updated_at": "2026-05-23T18:25:11.855Z",
+    "stock_last_changed": "2026-05-23T18:25:11.903Z",
+    "allow_print": false,
+    "labels": [
+      18,
+      15,
+      24,
+      25
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 49,
+  "fields": {
+    "name": "Argentina Home Kit (Sublimation)",
+    "slug": "argentina-home-kit-sublimation",
+    "description": "Argentina's iconic sky blue and white stripes in sublimation print quality. World Cup edition with fully sublimated design and AFA crest. Lightweight and breathable with colors that won't fade. Half sleeve. With Messi print on the back.",
+    "category": "kits",
+    "price": "750.00",
+    "is_active": true,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:45.747Z",
+    "updated_at": "2026-05-23T18:24:47.110Z",
+    "stock_last_changed": "2026-05-23T18:24:47.164Z",
+    "allow_print": false,
+    "labels": [
+      18,
+      15,
+      24,
+      25
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 50,
+  "fields": {
+    "name": "Germany Home Kit (Sublimation)",
+    "slug": "germany-home-kit-sublimation",
+    "description": "Germany's classic white home kit in sublimation print quality. World Cup edition with sublimated DFB detailing and sharp clean design. Premium breathable fabric with durable sublimated finish. Half sleeve. With Musiala print on the back.",
+    "category": "kits",
+    "price": "750.00",
+    "is_active": true,
+    "is_hot_pick": true,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T08:58:45.806Z",
+    "updated_at": "2026-05-23T18:23:59.366Z",
+    "stock_last_changed": "2026-05-23T18:23:59.414Z",
+    "allow_print": false,
+    "labels": [
+      18,
+      15,
+      24,
+      25
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 52,
+  "fields": {
+    "name": "Starboy",
+    "slug": "starboy",
+    "description": "Tshirt",
+    "category": "clothing",
+    "price": "1300.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T15:15:38.564Z",
+    "updated_at": "2026-05-23T15:56:02.643Z",
+    "stock_last_changed": "2026-05-23T15:56:02.677Z",
+    "allow_print": false,
+    "labels": [
+      26
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 53,
+  "fields": {
+    "name": "Speed",
+    "slug": "speed",
+    "description": "Tshirt",
+    "category": "clothing",
+    "price": "1300.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T15:15:38.596Z",
+    "updated_at": "2026-05-23T15:55:53.758Z",
+    "stock_last_changed": "2026-05-23T15:55:53.790Z",
+    "allow_print": false,
+    "labels": [
+      26
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 54,
+  "fields": {
+    "name": "Sakura",
+    "slug": "sakura",
+    "description": "Tshirt",
+    "category": "clothing",
+    "price": "1300.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T15:15:38.623Z",
+    "updated_at": "2026-05-23T15:55:44.408Z",
+    "stock_last_changed": "2026-05-23T15:55:44.459Z",
+    "allow_print": false,
+    "labels": [
+      26
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 55,
+  "fields": {
+    "name": "CBR",
+    "slug": "cbr",
+    "description": "Tshirt",
+    "category": "clothing",
+    "price": "1300.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T15:15:38.649Z",
+    "updated_at": "2026-05-23T15:55:36.176Z",
+    "stock_last_changed": "2026-05-23T15:55:36.229Z",
+    "allow_print": false,
+    "labels": [
+      26
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 56,
+  "fields": {
+    "name": "Tulip",
+    "slug": "tulip",
+    "description": "Hoodie",
+    "category": "clothing",
+    "price": "2000.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T15:15:38.676Z",
+    "updated_at": "2026-05-23T15:55:28.483Z",
+    "stock_last_changed": "2026-05-23T15:55:28.502Z",
+    "allow_print": false,
+    "labels": [
+      27
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 57,
+  "fields": {
+    "name": "Pokemon",
+    "slug": "pokemon",
+    "description": "hoodie",
+    "category": "clothing",
+    "price": "2000.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T15:15:38.692Z",
+    "updated_at": "2026-05-23T15:55:20.435Z",
+    "stock_last_changed": "2026-05-23T15:55:20.455Z",
+    "allow_print": false,
+    "labels": [
+      27
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 58,
+  "fields": {
+    "name": "Zaza",
+    "slug": "zaza",
+    "description": "Hoodie",
+    "category": "clothing",
+    "price": "2000.00",
+    "is_active": false,
+    "is_hot_pick": false,
+    "is_offer": false,
+    "original_price": null,
+    "created_at": "2026-05-22T15:15:38.710Z",
+    "updated_at": "2026-05-23T15:55:12.822Z",
+    "stock_last_changed": "2026-05-23T15:55:12.843Z",
+    "allow_print": false,
+    "labels": [
+      27
+    ]
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 4,
+  "fields": {
+    "product": 46,
+    "image": "products/front.webp",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 5,
+  "fields": {
+    "product": 46,
+    "image": "products/back.avif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 8,
+  "fields": {
+    "product": 40,
+    "image": "products/Front.jpg",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 9,
+  "fields": {
+    "product": 40,
+    "image": "products/back.jpg",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 10,
+  "fields": {
+    "product": 23,
+    "image": "products/Front_eU1KVW8.webp",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 11,
+  "fields": {
+    "product": 23,
+    "image": "products/Back.webp",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 13,
+  "fields": {
+    "product": 50,
+    "image": "products/1S.jfif",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 14,
+  "fields": {
+    "product": 50,
+    "image": "products/2S.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 15,
+  "fields": {
+    "product": 49,
+    "image": "products/1S_GlcoNGL.jfif",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 16,
+  "fields": {
+    "product": 49,
+    "image": "products/2S_d5IJ5Zo.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 17,
+  "fields": {
+    "product": 48,
+    "image": "products/1S_vIOeD0f.jfif",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 18,
+  "fields": {
+    "product": 48,
+    "image": "products/2S_Ko46wkZ.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 19,
+  "fields": {
+    "product": 47,
+    "image": "products/1S_ysZE4lk.jfif",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 20,
+  "fields": {
+    "product": 47,
+    "image": "products/2S_mmm2GO4.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 25,
+  "fields": {
+    "product": 20,
+    "image": "products/1_KPpQPYp.jfif",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 26,
+  "fields": {
+    "product": 20,
+    "image": "products/2_CkN7EP2.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 27,
+  "fields": {
+    "product": 20,
+    "image": "products/3_F9innxG.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 28,
+  "fields": {
+    "product": 18,
+    "image": "products/1_aNl6PfD.jfif",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 29,
+  "fields": {
+    "product": 29,
+    "image": "products/1_tt05cnY.jfif",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 30,
+  "fields": {
+    "product": 24,
+    "image": "products/1_SmwnLET.jfif",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 31,
+  "fields": {
+    "product": 24,
+    "image": "products/2_Oe5WHfK.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 32,
+  "fields": {
+    "product": 24,
+    "image": "products/3_gCnscms.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 33,
+  "fields": {
+    "product": 24,
+    "image": "products/4_zn0Mha3.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 38,
+  "fields": {
+    "product": 22,
+    "image": "products/4_TNbTvYQ.jfif",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 39,
+  "fields": {
+    "product": 22,
+    "image": "products/1_VNHHKiK.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 40,
+  "fields": {
+    "product": 22,
+    "image": "products/2_s6kk8az.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 41,
+  "fields": {
+    "product": 22,
+    "image": "products/3_EBmK5wz.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 42,
+  "fields": {
+    "product": 21,
+    "image": "products/4_wZraTPg.jfif",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 43,
+  "fields": {
+    "product": 21,
+    "image": "products/1_tLVUI2T.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 44,
+  "fields": {
+    "product": 21,
+    "image": "products/2_vZnt483.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 45,
+  "fields": {
+    "product": 21,
+    "image": "products/3_yglA4Ot.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 46,
+  "fields": {
+    "product": 19,
+    "image": "products/1_H2EyOA7.jfif",
+    "is_primary": true
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 47,
+  "fields": {
+    "product": 19,
+    "image": "products/2_iwaF5Sq.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 48,
+  "fields": {
+    "product": 19,
+    "image": "products/3_xmMoGO4.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productimage",
+  "pk": 49,
+  "fields": {
+    "product": 19,
+    "image": "products/4_tDUL0l2.jfif",
+    "is_primary": false
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 172,
+  "fields": {
+    "product": 58,
+    "size": "Free Size",
+    "quantity": 10
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 173,
+  "fields": {
+    "product": 57,
+    "size": "Free Size",
+    "quantity": 10
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 174,
+  "fields": {
+    "product": 56,
+    "size": "Free Size",
+    "quantity": 10
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 175,
+  "fields": {
+    "product": 55,
+    "size": "M",
+    "quantity": 13
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 176,
+  "fields": {
+    "product": 55,
+    "size": "XL",
+    "quantity": 13
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 177,
+  "fields": {
+    "product": 54,
+    "size": "M",
+    "quantity": 13
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 178,
+  "fields": {
+    "product": 54,
+    "size": "XL",
+    "quantity": 13
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 179,
+  "fields": {
+    "product": 53,
+    "size": "M",
+    "quantity": 13
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 180,
+  "fields": {
+    "product": 53,
+    "size": "XL",
+    "quantity": 13
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 181,
+  "fields": {
+    "product": 52,
+    "size": "M",
+    "quantity": 13
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 182,
+  "fields": {
+    "product": 52,
+    "size": "XL",
+    "quantity": 13
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 183,
+  "fields": {
+    "product": 46,
+    "size": "L",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 184,
+  "fields": {
+    "product": 46,
+    "size": "XL",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 185,
+  "fields": {
+    "product": 45,
+    "size": "M",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 186,
+  "fields": {
+    "product": 45,
+    "size": "L",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 187,
+  "fields": {
+    "product": 45,
+    "size": "XL",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 188,
+  "fields": {
+    "product": 42,
+    "size": "L",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 189,
+  "fields": {
+    "product": 42,
+    "size": "XL",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 190,
+  "fields": {
+    "product": 44,
+    "size": "M",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 191,
+  "fields": {
+    "product": 44,
+    "size": "L",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 192,
+  "fields": {
+    "product": 44,
+    "size": "XL",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 193,
+  "fields": {
+    "product": 43,
+    "size": "L",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 194,
+  "fields": {
+    "product": 43,
+    "size": "XL",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 195,
+  "fields": {
+    "product": 41,
+    "size": "XL",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 198,
+  "fields": {
+    "product": 39,
+    "size": "XL",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 199,
+  "fields": {
+    "product": 38,
+    "size": "XL",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 200,
+  "fields": {
+    "product": 37,
+    "size": "M",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 201,
+  "fields": {
+    "product": 37,
+    "size": "L",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 202,
+  "fields": {
+    "product": 37,
+    "size": "XL",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 203,
+  "fields": {
+    "product": 36,
+    "size": "M",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 204,
+  "fields": {
+    "product": 35,
+    "size": "M",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 205,
+  "fields": {
+    "product": 35,
+    "size": "L",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 206,
+  "fields": {
+    "product": 35,
+    "size": "XL",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 207,
+  "fields": {
+    "product": 34,
+    "size": "M",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 208,
+  "fields": {
+    "product": 34,
+    "size": "XL",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 209,
+  "fields": {
+    "product": 23,
+    "size": "M",
+    "quantity": 11
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 210,
+  "fields": {
+    "product": 23,
+    "size": "L",
+    "quantity": 6
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 211,
+  "fields": {
+    "product": 23,
+    "size": "XL",
+    "quantity": 6
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 215,
+  "fields": {
+    "product": 40,
+    "size": "XL",
+    "quantity": 3
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 227,
+  "fields": {
+    "product": 32,
+    "size": "M",
+    "quantity": 4
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 228,
+  "fields": {
+    "product": 32,
+    "size": "L",
+    "quantity": 4
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 229,
+  "fields": {
+    "product": 32,
+    "size": "XL",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 230,
+  "fields": {
+    "product": 31,
+    "size": "M",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 231,
+  "fields": {
+    "product": 31,
+    "size": "L",
+    "quantity": 3
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 232,
+  "fields": {
+    "product": 31,
+    "size": "XL",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 233,
+  "fields": {
+    "product": 30,
+    "size": "M",
+    "quantity": 4
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 234,
+  "fields": {
+    "product": 30,
+    "size": "L",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 238,
+  "fields": {
+    "product": 28,
+    "size": "M",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 239,
+  "fields": {
+    "product": 28,
+    "size": "L",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 240,
+  "fields": {
+    "product": 28,
+    "size": "XL",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 241,
+  "fields": {
+    "product": 27,
+    "size": "M",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 242,
+  "fields": {
+    "product": 27,
+    "size": "L",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 243,
+  "fields": {
+    "product": 27,
+    "size": "XL",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 244,
+  "fields": {
+    "product": 26,
+    "size": "M",
+    "quantity": 4
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 245,
+  "fields": {
+    "product": 26,
+    "size": "L",
+    "quantity": 3
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 246,
+  "fields": {
+    "product": 26,
+    "size": "XL",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 247,
+  "fields": {
+    "product": 25,
+    "size": "M",
+    "quantity": 5
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 248,
+  "fields": {
+    "product": 25,
+    "size": "L",
+    "quantity": 4
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 249,
+  "fields": {
+    "product": 25,
+    "size": "XL",
+    "quantity": 3
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 268,
+  "fields": {
+    "product": 50,
+    "size": "M",
+    "quantity": 20
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 269,
+  "fields": {
+    "product": 50,
+    "size": "L",
+    "quantity": 20
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 270,
+  "fields": {
+    "product": 50,
+    "size": "XL",
+    "quantity": 20
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 274,
+  "fields": {
+    "product": 49,
+    "size": "M",
+    "quantity": 20
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 275,
+  "fields": {
+    "product": 49,
+    "size": "L",
+    "quantity": 20
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 276,
+  "fields": {
+    "product": 49,
+    "size": "XL",
+    "quantity": 20
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 277,
+  "fields": {
+    "product": 48,
+    "size": "M",
+    "quantity": 20
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 278,
+  "fields": {
+    "product": 48,
+    "size": "L",
+    "quantity": 20
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 279,
+  "fields": {
+    "product": 48,
+    "size": "XL",
+    "quantity": 20
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 280,
+  "fields": {
+    "product": 47,
+    "size": "M",
+    "quantity": 20
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 281,
+  "fields": {
+    "product": 47,
+    "size": "L",
+    "quantity": 20
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 282,
+  "fields": {
+    "product": 47,
+    "size": "XL",
+    "quantity": 20
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 285,
+  "fields": {
+    "product": 20,
+    "size": "M",
+    "quantity": 4
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 286,
+  "fields": {
+    "product": 20,
+    "size": "L",
+    "quantity": 4
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 287,
+  "fields": {
+    "product": 20,
+    "size": "XL",
+    "quantity": 3
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 291,
+  "fields": {
+    "product": 18,
+    "size": "M",
+    "quantity": 8
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 292,
+  "fields": {
+    "product": 18,
+    "size": "L",
+    "quantity": 4
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 293,
+  "fields": {
+    "product": 18,
+    "size": "XL",
+    "quantity": 9
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 294,
+  "fields": {
+    "product": 29,
+    "size": "M",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 295,
+  "fields": {
+    "product": 29,
+    "size": "L",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 296,
+  "fields": {
+    "product": 29,
+    "size": "XL",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 297,
+  "fields": {
+    "product": 24,
+    "size": "M",
+    "quantity": 4
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 298,
+  "fields": {
+    "product": 24,
+    "size": "L",
+    "quantity": 3
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 299,
+  "fields": {
+    "product": 24,
+    "size": "XL",
+    "quantity": 5
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 303,
+  "fields": {
+    "product": 22,
+    "size": "M",
+    "quantity": 4
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 304,
+  "fields": {
+    "product": 22,
+    "size": "L",
+    "quantity": 5
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 305,
+  "fields": {
+    "product": 22,
+    "size": "XL",
+    "quantity": 4
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 306,
+  "fields": {
+    "product": 21,
+    "size": "M",
+    "quantity": 12
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 307,
+  "fields": {
+    "product": 21,
+    "size": "L",
+    "quantity": 9
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 308,
+  "fields": {
+    "product": 21,
+    "size": "XL",
+    "quantity": 11
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 309,
+  "fields": {
+    "product": 19,
+    "size": "M",
+    "quantity": 3
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 310,
+  "fields": {
+    "product": 19,
+    "size": "L",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 311,
+  "fields": {
+    "product": 19,
+    "size": "XL",
+    "quantity": 1
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 312,
+  "fields": {
+    "product": 33,
+    "size": "M",
+    "quantity": 2
+  }
+},
+{
+  "model": "products.productsize",
+  "pk": 313,
+  "fields": {
+    "product": 33,
+    "size": "XL",
+    "quantity": 2
+  }
+}
+]

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Verify Email - SEREN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body class="login-page">
+  <form id="verifyForm" class="login-card">
+    <h1>Verify Email</h1>
+    <p>We've sent a 6-digit code to <strong id="verifyEmailTarget"></strong></p>
+    <label>OTP Code<input id="code" maxlength="6" required /></label>
+    <button type="submit">Verify</button>
+    <button id="resendOtp" type="button">Resend code</button>
+    <p id="verifyError" class="error"></p>
+  </form>
+  <script type="module" src="./js/auth.js"></script>
+  <script type="module">import { renderFooter } from './js/footer.js'; renderFooter();</script>
+</body>
+</html>
