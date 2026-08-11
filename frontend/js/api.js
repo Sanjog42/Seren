@@ -1,4 +1,4 @@
-export const BASE_URL = window.__API_BASE_URL__ || 'http://serennp.com';
+export const BASE_URL = window.__API_BASE_URL__ || 'https://serennp.com';
 
 const ACCESS_KEY = 'seren_access';
 const REFRESH_KEY = 'seren_refresh';

@@ -1,19 +1,25 @@
 Options -Indexes
+DirectoryIndex index.html
 
 RewriteEngine On
+RewriteRule ^$ /index.html [L]
 
 # ─── Force HTTPS ─────────────────────────────────────────────────────────────
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# ─── www → bare domain (uncomment to enable) ─────────────────────────────────
-# RewriteCond %{HTTP_HOST} ^www\.yourdomain\.com [NC]
-# RewriteRule ^(.*)$ https://yourdomain.com/$1 [L,R=301]
+# ─── Clean URLs — only when browser explicitly requests .html ─────────────────
+RewriteCond %{THE_REQUEST} \s/(.+)\.html[\s?]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
 
 # ─── Serve existing files and directories directly ────────────────────────────
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
+
+# ─── Rewrite clean URLs to .html files ───────────────────────────────────────
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
 
 # ─── Cache static assets ─────────────────────────────────────────────────────
 <IfModule mod_expires.c>
@@ -39,3 +45,19 @@ RewriteRule ^ - [L]
     Order Allow,Deny
     Deny from all
 </FilesMatch>
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home2/serennpc/jersey_store/backend"
+PassengerBaseURI "/"
+PassengerPython "/home2/serennpc/virtualenv/jersey_store/backend/3.11/bin/python"
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php82” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php82 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

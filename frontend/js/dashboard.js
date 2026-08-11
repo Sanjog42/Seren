@@ -13,7 +13,7 @@ document.querySelectorAll('[data-logout]').forEach(b => b.addEventListener('clic
 const view = document.getElementById('view');
 const $ = id => document.getElementById(id);
 const currency = v => `NPR ${Number(v || 0).toFixed(2)}`;
-const SIZES = ['M', 'L', 'XL', 'XXL'];
+const SIZES = ['S', 'M', 'L', 'XL', 'XXL'];
 
 const STATUS_COLORS = {
   pending: '#a0a0a0',
